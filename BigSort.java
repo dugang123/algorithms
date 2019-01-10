@@ -52,6 +52,7 @@ public class BigSort {
                     }
                 }
                 if (count > 0) {
+                    buffer = Arrays.copyOf(buffer,count);
                     sortAndSave(encoding, comparator, buffer, count);
                     count = 0;
                 }
